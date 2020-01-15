@@ -23,12 +23,12 @@ Please use the included createField function. Honestly it's not essential for us
 To keep with the developer first mantra, you decide when to validate, be it onChange, onBlur, onSubmit or anything else you can think of. Validation happens on validateFields, with an array of the fields to validate, the value of the field and dynamicCompare if needed. So you can validate a single field onChange for that field, or the entire form, just add the fields to the array to validate.
 
 -   validateFields takes an array of fields with value, and sets status in the state of the hook.
--   getFieldErrorMessage takes a field and returns the error message for that field from state
--   getAllErrorMessages returns all errorMessages from all fields in state
--   hasValidationError returns a boolean if the state contains any validation errors
--   All the functions is returned as an array, so if you want to rename them when you use them, you can do that directly. Say you want to use more than one useValidation in a single component, that works just fine.
+-  getFieldErrorMessage takes a field and returns the error message for that field from state
+-  getAllErrorMessages returns all errorMessages from all fields in state
+-  hasValidationError returns a boolean if the state contains any validation errors
+-  All the functions is returned as an array, so if you want to rename them when you use them, you can do that directly. Say you want to use more than one useValidation in a single component, that works just fine.
 
-UseValidation do not really care that much about the validator functions itself, except that it needs to take the value of the field as the argument, and should return true/false. You must supply that function yourself, nothing is built-in to useValidation. See validator function in KFP-SHARED. If using those function out of the box, you need to set message=true, and flip the value, as they were created to use formFieldValidation that had quite different mindset.
+UseValidation do not really care that much about the validator functions itself, except that it needs to take the value of the field as the argument, and should return true/false. You must supply that function yourself, nothing is built-in to useValidation. If using those function out of the box, you need to set message=true, and flip the value, as they were created to use formFieldValidation that had quite different mindset.
 
 ## Developer notes
 
@@ -37,6 +37,6 @@ Please keep the test coverage at a reasonable level
 
 ### TODO
 
--   Developer warning if same field name is registered more than once in the hook scope
--   Should validateFields return a boolean if all fields validated or not?
+-  Developer warning if same field name is registered more than once in the hook scope
+-  Should validateFields return a boolean if all fields validated or not?
 -  Optimize validation and get functions with memiozation
