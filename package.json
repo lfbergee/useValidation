@@ -1,0 +1,24 @@
+{
+  "name": "usevalidation",
+  "version": "1.0.0",
+  "description": "React Hook to provide form field validation",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lfbergee/useValidation.git"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "validation"
+  ],
+  "author": "lfbergee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lfbergee/useValidation/issues"
+  },
+  "homepage": "https://github.com/lfbergee/useValidation#readme"
+}
