@@ -1,5 +1,7 @@
 # useValidation
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/lfbergee/useValidation.svg)](https://greenkeeper.io/)
+
 ## Core idea
 
 useValidation is to be a non-magical field validation building block. With useValidation you as a developer has more or less what you need to build any form validation. This prioritizes light weight and as little opinions as possible. This allows you to build your forms as you need them, not as how the library author imagine forms to be. The trade off is you need to supply some boilerplate to actually do something interesting with your form. Think of this as fieldValidation, not formValidation, you will build the form validation!
